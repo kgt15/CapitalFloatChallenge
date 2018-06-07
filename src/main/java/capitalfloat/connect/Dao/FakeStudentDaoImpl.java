@@ -1,6 +1,7 @@
 package capitalfloat.connect.Dao;
 
 import capitalfloat.connect.Entity.Student;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Repository;
 
 import java.util.Collection;
@@ -8,6 +9,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Repository
+@Qualifier("Fake Values")
 public class FakeStudentDaoImpl implements StudentDao{
     private static Map<Integer, Student> students;
 
